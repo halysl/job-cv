@@ -732,6 +732,10 @@ div#portfolioModal1,div#portfolioModal2,div#portfolioModal3,div#portfolioModal4,
 .progress-bar.progress-bar-warning4 {
     background: #BD0000;
 }
+.progress-bar.progress-bar-success5 {
+    background: #006600;
+}
+
 .no-marg{
 	margin:0;
 }
@@ -1503,7 +1507,7 @@ background:#fff;
 		width: 73%;
 	}
 	.scrollbar {
-		height: 260px;
+		height: 360px;
 	}
 	div#ascrail2001 {
 		height: 260px !important;

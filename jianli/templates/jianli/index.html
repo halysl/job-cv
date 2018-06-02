@@ -11,16 +11,17 @@
 <!-- //for-mobile-apps -->
 <link href="{{ base_dir }}css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
 <link href="{{ base_dir }}css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="{{ base_dir }}css/font-awesome.min.css" rel="stylesheet" type="text/css" media="all" />
 <!-- js -->
-<script type="text/javascript" src="../../static/js/jquery-2.1.4.min.js"></script>
+<script type="text/javascript" src="{{ base_dir }}js/jquery-2.1.4.min.js"></script>
 <!-- //js -->
 <!-- fonts -->
 <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
 <link href='https://fonts.googleapis.com/css?family=Acme' rel='stylesheet' type='text/css'><!-- //fonts -->
 
 	<!-- start-smoth-scrolling -->
-		<script type="text/javascript" src="../../static/js/move-top.js"></script>
-		<script type="text/javascript" src="../../static/js/easing.js"></script>
+		<script type="text/javascript" src="{{ base_dir }}js/move-top.js"></script>
+		<script type="text/javascript" src="{{ base_dir }}js/easing.js"></script>
 		<script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -32,7 +33,7 @@
 	<!-- start-smoth-scrolling -->
 
 <!-- skills -->
-<script src="../../static/js/pie-chart.js" type="text/javascript"></script>
+<script src="{{ base_dir }}js/pie-chart.js" type="text/javascript"></script>
  <script type="text/javascript">
 
         $(document).ready(function () {
@@ -78,7 +79,7 @@
         });
     </script>
 <!-- skills -->
-<script type="text/javascript" src="../../static/js/numscroller-1.0.js"></script>
+<script type="text/javascript" src="{{ base_dir }}js/numscroller-1.0.js"></script>
 
 </head>
 <body>
@@ -207,7 +208,7 @@
 			<p>{{ pe.duty }}</p>
 			<p>简介：{{ pe.content }}</p>
 			<p><a href="{{ pe.git_link }}">项目地址：{{ pe.git_link }}</a></p>
-			{% if pe.blog_link is not None %}
+			{% if pe.blog_link %}
 			<p><a href="{{ pe.blog_link }}">博客地址：{{ pe.blog_link }}</a></p>
 			{% endif %}
 			<p>
@@ -221,364 +222,52 @@
 	</div>
 </div>
 <!-- education -->
-<!-- num scroller -->
 
-<!-- //num scroller -->
-<!-- portfolio -->
-<div class="portfolio">
-	<div class="container">
-		<h3 class="tittle ">Portfolio</h3>
-			<div class="portfolio-grids">
-				<script src="js/easyResponsiveTabs.js" type="text/javascript"></script>
-				<script type="text/javascript">
-									$(document).ready(function () {
-										$('#horizontalTab').easyResponsiveTabs({
-											type: 'default', //Types: default, vertical, accordion           
-											width: 'auto', //auto or any width like 600px
-											fit: true   // 100% fit in a container
-										});
-									});
-									
-				</script>
-				<div class="sap_tabs">
-					<div id="horizontalTab" style="display: block; width: 100%; margin: 0px;">
-						<ul class="resp-tabs-list">
-							<li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>All</span></li> 
-							<li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>Web Design</span></li> 
-							<li class="resp-tab-item" aria-controls="tab_item-2" role="tab"><span>Graphic Design</span></li> 
-						</ul>				  	 
-						<div class="resp-tabs-container">
-							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-0">
-								<div class="col-md-3 team-gd ">
-									<div class="thumb">
-										<a href="#portfolioModal1" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic4.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd ">
-									<div class="thumb">
-										<a href="#portfolioModal3" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic5.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd ">
-									<div class="thumb">
-										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic9.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd ">
-									<div class="thumb">
-										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic6.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd yes_marg ">
-									<div class="thumb">
-										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd yes_marg ">
-									<div class="thumb">
-										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd yes_marg ">
-									<div class="thumb">
-										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd yes_marg ">
-									<div class="thumb">
-										<a href="#portfolioModal8" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic14.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-1">
-								<div class="col-md-3 team-gd ">
-									<div class="thumb">
-										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd  ">
-									<div class="thumb">
-										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd ">
-									<div class="thumb">
-										<a href="#portfolioModal7" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic13.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-							<div class="tab-1 resp-tab-content" aria-labelledby="tab_item-2">
-								<div class="col-md-3 team-gd ">
-									<div class="thumb">
-										<a href="#portfolioModal2" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic9.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd ">
-									<div class="thumb">
-										<a href="#portfolioModal4" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic6.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd">
-									<div class="thumb">
-										<a href="#portfolioModal5" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic10.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="col-md-3 team-gd">
-									<div class="thumb">
-										<a href="#portfolioModal6" class="portfolio-link b-link-diagonal b-animate-go" data-toggle="modal"><img src="images/pic11.jpg" alt="">
-										<div class="team_pos">
-											<ul>
-												<li>
-													<div class="morph pic fb_icon1">
-													</div>
-												</li>
-											</ul>
-										</div>
-										</a>
-									</div>
-								</div>
-								<div class="clearfix"></div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-	</div>
-</div>
-<!-- //portfolio -->
 <!-- more skills -->
 <div class="more">
 	<div class="container">
-		<h3 class="tittle ">Skills</h3>
+		<h3 class="tittle ">技能</h3>
 		<div class="col-md-6 skill-left ">
+			{% for skill in detail_skills %}
 			<div class="progress">
-				  <div class="progress-bar progress-bar-success" style="width: 30%">WEB DESIGNER
+				  <div class="progress-bar progress-bar-success{{ skill.id }}" style="width: 30%">{{ skill.name }}
 					<span class="sr-only">35% Complete (success)</span>
 				  </div>
-				  <div class="progress-bar progress-bar-warning " style="width: 40%">
+				  <div class="progress-bar progress-bar-warning{{ skill.id % 5 }} " style="width:{{ skill.score - 30 }}%">
 					<span class="sr-only"></span>
 				  </div>
-				  <p>70%</p>
+				  <p>{{ skill.score }}%</p>
 				  <div class="clearfix"></div>
 			</div>
-			<div class="progress">
-				  <div class="progress-bar progress-bar-success1" style="width: 30%">JAVA SCRIPT
-					<span class="sr-only">35% Complete (success)</span>
-				  </div>
-				  <div class="progress-bar progress-bar-warning1" style="width: 20%">
-					<span class="sr-only"></span>
-				  </div>
-				  <p>50%</p>
-				  <div class="clearfix"></div>
-			</div>
-			<div class="progress">
-				  <div class="progress-bar progress-bar-success3" style="width: 30%">CSS
-					<span class="sr-only">35% Complete (success)</span>
-				  </div>
-				  <div class="progress-bar progress-bar-warning3 " style="width: 55%">
-					<span class="sr-only"></span>
-				  </div>
-				  <p>85%</p>
-				  <div class="clearfix"></div>
-			</div>
-			<div class="progress">
-				  <div class="progress-bar progress-bar-success2" style="width: 30%">HTML
-					<span class="sr-only">35% Complete (success)</span>
-				  </div>
-				  <div class="progress-bar progress-bar-warning2" style="width: 55%">
-					<span class="sr-only"></span>
-				  </div>
-				  <p>85%</p>
-				  <div class="clearfix"></div>
-			</div>
-			
-			<div class="progress no-marg">
-				  <div class="progress-bar progress-bar-success4" style="width: 30%">GRAPHIC DESIGN
-					<span class="sr-only">35% Complete (success)</span>
-				  </div>
-				  <div class="progress-bar progress-bar-warning4" style="width: 40%">
-					<span class="sr-only"></span>
-				  </div>
-				  <p>70%</p>
-				  <div class="clearfix"></div>
-			</div>
+			{% endfor %}			
 		</div>
+
 		<div class="col-md-6 skill-right ">
 			<div class="scrollbar scrollbar1">
+				{% for skill in detail_skills if skill.id in [1,2,4,5] %}{% if loop.index % 2 == 1 %}
 				<div class="more-gds">
 					<div class="col-sm-3 more-left">
-						<span class="glyphicon glyphicon-scissors" aria-hidden="true"></span>
+						<span class="{{skill.icon}}" aria-hidden="true"></span>
 					</div>
 					<div class="col-sm-9 more-right">
-						<h4>Clean Design</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error 
-						sit voluptatem accusantium doloremque laudantium,
-						totam rem .</p>
+						<h4>关于{{ skill.name }}</h4>
+						<p>{{ skill.content }}</p>
 					</div>
 					<div class="clearfix"></div>
 				</div>
+				{% else %}
 				<div class="more-gds yes_marg">
 					<div class="col-sm-9 more-right2">
-						<h4>Mobile Applications</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error 
-						sit voluptatem accusantium doloremque laudantium,
-						totam rem .</p>
+						<h4>关于{{ skill.name }}</h4>
+						<p>{{ skill.content }}</p>
 					</div>
 					<div class="col-sm-3 more-left">
-						<span class="glyphicon glyphicon-phone" aria-hidden="true"></span>
+						<span class="{{ skill.icon }}" aria-hidden="true"></span>
 					</div>
 					<div class="clearfix"></div>
 				</div>
-				<div class="more-gds yes_marg">
-					<div class="col-sm-3 more-left">
-						<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
-					</div>
-					<div class="col-sm-9 more-right">
-						<h4>Support</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error 
-						sit voluptatem accusantium doloremque laudantium,
-						totam rem .</p>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="more-gds yes_marg">
-					<div class="col-sm-9 more-right2">
-						<h4>Marketing</h4>
-						<p>Sed ut perspiciatis unde omnis iste natus error 
-						sit voluptatem accusantium doloremque laudantium,
-						totam rem .</p>
-					</div>
-					<div class="col-sm-3 more-left">
-						<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
-					</div>
+				{% endif %}
+				{% endfor %}				
 					<div class="clearfix"></div>
 				</div>
 			</div>
@@ -587,246 +276,49 @@
 	</div>
 </div>
 <!-- more skills -->
+
 <!-- contact -->
 <div id="emailme" class="contact">
 	<div class="container">
-		<h3 class="tittle">Contact</h3>
+		<h3 class="tittle">联系</h3>
 		<div class="col-md-6 contact-left ">
 			<div class="horizontal-tab">
 				<ul class="nav nav-tabs">
-					<li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="false">Contact me</a></li>
-					<li class=""><a href="#tab2" data-toggle="tab" aria-expanded="false">Hire me</a></li>
+					<li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="false">联系我</a></li>					
 				</ul>
 				<div class="tab-content">
 					<div class="tab-pane active in" id="tab1">
 						<div class="contact-form">
 							<ul>
-								<li><i class="glyphicon glyphicon-map-marker" aria-hidden="true"></i>1234k Avenue, 4th block, <span>Newyork City.</span></li>
-								<li><i class="glyphicon glyphicon-envelope" aria-hidden="true"></i><a href="mailto:info@example.com">info@example.com</a></li>
-								<li><i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>+1234 567 567</li>
-							</ul>
-							<form>
-								<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-								<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-								<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Message...</textarea>
-								<input type="submit" value="Submit" >
-							</form>
+                                {% for contact in contacts %}
+                                {% if contact.id in [1,2] %}      <li><i class="{{ contact.icon }}" aria-hidden="true"></i><a href="mailto:{{ contact.content }}">{{ contact.name }}:{{ contact.content }}</a></li>
+                                {% else %}
+                                <li><i class="{{ contact.icon }}" aria-hidden="true"></i><span>
+                                    {% if contact.url %}<a href="{{ contact.url }}" target="_blank">{{ contact.name }}:{{ contact.content }}</a>{% else %}{{ contact.name }}:{{ contact.content }}{% endif %}</span></li>
+                                {% endif %}
+                                {% endfor %}
+							</ul>			
 						</div>
 					 
 					</div>
-					<div class="tab-pane" id="tab2">
-					  <div class="contact-form">
-							<form>
-								<input type="text" value="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" required="">
-								<input type="email" value="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" required="">
-								<textarea type="text" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Message...';}" required="">Description...</textarea>
-								<input id="uploadFile" placeholder="Choose File" disabled="disabled" />
-									<div class="fileUpload btn btn-primary">
-										<span>Upload</span>
-										<input id="uploadBtn" type="file" class="upload" />
-									</div>
-								<input type="submit" value="Send Request" >
-							</form>
-							<script>
-								document.getElementById("uploadBtn").onchange = function () {
-									document.getElementById("uploadFile").value = this.value;
-								};
-							</script>
-						</div>
-					</div>
+					
 					
 				</div>
             </div>
 		</div>
 		<div class="clearfix"></div>
-		<p class="copy-right">Copyright &copy; 2016.Company name All rights reserved.More Templates <a href="http://www.cssmoban.com/" target="_blank" title="模板之家">模板之家</a> - Collect from <a href="http://www.cssmoban.com/" title="网页模板" target="_blank">网页模板</a></p>
+		<p class="copy-right">&copy; 2018 design by Light with Django</p>
 	</div>
 </div>
 <!-- //contact -->
 <!-- for bootstrap working -->
-	<script src="js/bootstrap.js"></script>
+	<script src="{{ base_dir }}js/bootstrap.js"></script>
 <!-- //for bootstrap working -->
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic4.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic9.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic5.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic6.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic10.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic11.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic13.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal8" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-						<h3>Image-Title</h3>
-                        <img src="images/pic14.jpg" class="img-responsive img-centered" alt="">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="portfolio-modal modal fade slideanim" id="portfolioModal9" tabindex="-1" role="dialog" aria-hidden="true">
-    <div class="modal-content port-modal">
-        <div class="close-modal" data-dismiss="modal">
-            <div class="lr">
-                <div class="rl"></div>
-            </div>
-        </div>
-        <div class="container">
-			<div class="row">
-                <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <div class="modal-body">
-                        <img src="images/pic1.jpg" class="img-responsive img-centered" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
+
+
 	<!--scrolling js-->
-	<script src="js/jquery.nicescroll.js"></script>
-	<script src="js/scripts.js"></script>
+	<script src="{{ base_dir }}js/jquery.nicescroll.js"></script>
+	<script src="{{ base_dir }}js/scripts.js"></script>
 	<!--//scrolling js-->
 	<!-- smooth scrolling -->
 	<script type="text/javascript">

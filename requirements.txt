@@ -1,0 +1,9 @@
+certifi==2018.4.16
+Django==2.0.5
+Faker==0.8.15
+Jinja2==2.10
+MarkupSafe==1.0
+python-dateutil==2.7.3
+pytz==2018.4
+six==1.11.0
+text-unidecode==1.2

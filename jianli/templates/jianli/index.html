@@ -113,7 +113,7 @@
 			</ul>
 			<ul class="list-right">
 				<li><a href="mailto:{{ email }}">{{ email }}</a></li>
-				<li><a href="{{ website }}">{{ website }}</a></li>
+				<li><a href="{{ website }} " target="_blank">{{ website }}</a></li>
 				<li>{{ phone }}</li>
 			</ul>
 			<div class="clearfix"></div>
@@ -207,9 +207,12 @@
 			<h5><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>{{ pe.name }}</h5>
 			<p>{{ pe.duty }}</p>
 			<p>简介：{{ pe.content }}</p>
-			<p><a href="{{ pe.git_link }}">项目地址：{{ pe.git_link }}</a></p>
+			<p><a href="{{ pe.git_link }} " target="_blank">项目地址：{{ pe.git_link }}</a></p>
 			{% if pe.blog_link %}
-			<p><a href="{{ pe.blog_link }}">博客地址：{{ pe.blog_link }}</a></p>
+			<p><a href="{{ pe.blog_link }}" target="_blank">博客地址：{{ pe.blog_link }}</a></p>			
+			{% endif %}
+			{% if pe.show_link %}
+			<p><a href="{{ pe.show_link }}" target="_blank">演示地址：{{ pe.show_link }}</a></p>
 			{% endif %}
 			<p>
 				项目内容：<br>
@@ -244,7 +247,8 @@
 
 		<div class="col-md-6 skill-right ">
 			<div class="scrollbar scrollbar1">
-				{% for skill in detail_skills if skill.id in [1,2,4,5] %}{% if loop.index % 2 == 1 %}
+				{% for skill in detail_skills if skill.id in [1,2,4,5] %}
+				{% if loop.index % 2 == 1 %}
 				<div class="more-gds">
 					<div class="col-sm-3 more-left">
 						<span class="{{skill.icon}}" aria-hidden="true"></span>
@@ -271,6 +275,7 @@
 					<div class="clearfix"></div>
 				</div>
 			</div>
+			
 		</div>
 		<div class="clearfix"></div>
 	</div>

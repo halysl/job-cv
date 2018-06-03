@@ -1,7 +1,6 @@
 from django.shortcuts import render
 
 import json
-import os
 # Create your views here.
 def index(request):    
     with open('jianli/data.json','r') as f:

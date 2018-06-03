@@ -6,7 +6,7 @@
     "email":"halysl0817@gmail.com",
     "name":"刘志",
     "phone":"15215626096",
-    "website":"http://demo.lightl.fun",
+    "website":"http://www.lightl.fun",
     "edus":[
             {"id":1,
              "time":"2014-2018",
@@ -30,7 +30,7 @@
                            "duty":"负责人",
                            "content":"根据教程，一步一步的完成个人博客的开发，了解了MVC设计模式，设计并实现了基本功能（分类、归档），添加对rss的支持，在linux的部署以及绑定域名",
                            "git_link":"https://github.com/halysl/blog-with-django",
-                           "blog_link":"null",
+                           "show_link":"http://blog.lightl.fun",
                            "full_content":["-->实现基本功能（发md格式博文，评论系统，分类，归档）",
                                            "-->添加对rss订阅的支持",
                                            "-->使用nginx+uwsgi完成部署，并将服务器ip绑定域名"]
@@ -45,6 +45,18 @@
                            "full_content":["-->根据目标网页，设计爬取内容，并针对获取内容进行处理",
                                            "-->使用docker+splash完成对js数据的获取，并连接mysql数据库进行存储",
                                            "-->通过设置“程序睡眠”，“设置user-agent”，“设置代理”等方法完成防ban策略"]
+                           },
+                           {"id":3,
+                           "class":"single",
+                           "name":"使用Django创建一份在线简历",
+                           "duty":"项目负责人",
+                           "content":"根据需求，一步一步的利用django框架完成在线简历的实现，并部署在公网服务器",
+                           "git_link":"https://github.com/halysl/job-cv",
+                           "blog_link":"https://blog.csdn.net/Cloud_Strife0/article/details/80555793",
+                           "show_link":"http://cv.lightl.fun",
+                           "full_content":["-->根据需求，使用适合的前端页面模板，并针对模板设计相应的内容，将内容处理为json文件",
+                                           "-->使用jinja2的模板渲染，将真实数据渲染到前端",
+                                           "-->使用nginx+gunicorn完成部署，并将服务器ip绑定域名"]
                            }
                           ],
     "about_me":["*全日制大学本科及以上学历",
